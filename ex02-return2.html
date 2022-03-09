@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return 사용 예제2</title>
+</head>
+<body>
+    <script>
+        function sum(){
+            var sum = 0;
+            var count = 1;
+
+            while(true){
+                var num = parseInt(window.prompt("숫자를 입력하세요[0을 입력하면 종료합니다]",123));
+                if(num == 0){
+                    document.write("함수를 종료합니다.");
+                    return; //실행하던 함수를 종료한다.    
+                }
+                sum += num;
+                document.write(count + "회 째, 합계: "+sum + "<br>");
+                count++
+            }    
+        }//여기까지 함수를 정의함
+        sum();//여기에서 함수를 호출하였음.
+    </script>
+</body>
+</html>
