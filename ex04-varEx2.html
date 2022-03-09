@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수&지역변수 생명주기2</title>
+</head>
+<body>
+    <script>
+        function localTest(){
+            var value = "노진구";
+            document.write("1. value = "+value); //지역변수 내에서는 값이 정상출력 됨
+        }
+        localTest();
+
+        document.write("2. value = "+value); // 함수 종료 후 value값이 사라지기 때문에 전역 사용 불가능함.(출력안됨)
+    </script>
+</body>
+</html>
